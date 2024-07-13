@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col justify-between px-5 pt-10 pb-32 md:px-20 md:pb-10">
       <div id="socials" className="mx-auto space-x-3">
-        <Link href="https://github.com/swayechateau" passHref>
+        <Link href="https://github.com/swayechateau" passHref legacyBehavior>
           <a className="inline-block text-gray-400 hover:text-gray-500">
             <span className="sr-only">GitHub</span>
             <svg
@@ -21,7 +21,7 @@ const Footer = () => {
             </svg>
           </a>
         </Link>
-        <Link href="https://mas.to/@mercylessreap" passHref>
+        <Link href="https://mas.to/@mercylessreap" passHref legacyBehavior>
           <a className="inline-block text-gray-400 hover:text-blue-400">
             <span className="sr-only">Mastodon</span>
             <svg
@@ -40,6 +40,7 @@ const Footer = () => {
         <Link
           href="https://www.youtube.com/channel/UCd1-cM1G-kwXGd0vUkUPk4g"
           passHref
+          legacyBehavior
         >
           <a className="inline-block text-gray-400 hover:text-red-500">
             <span className="sr-only">YouTube</span>
@@ -48,7 +49,7 @@ const Footer = () => {
             </svg>
           </a>
         </Link>
-        <Link href="https://twitter.com/SwayeChateau" passHref>
+        <Link href="https://twitter.com/SwayeChateau" passHref legacyBehavior>
           <a className="inline-block text-gray-400 hover:text-blue-300">
             <span className="sr-only">Twitter</span>
             <svg
@@ -67,7 +68,7 @@ const Footer = () => {
         <div id="copyright" className="p-2">
           <p className="text-white">
             Made with <span className="text-red-500">❤</span> by
-            <Link href="https://blog.swayechateau.com" passHref>
+            <Link href="https://blog.swayechateau.com" passHref legacyBehavior>
               <a className="text-white hover:text-green-400 font-bold">
                 <span>Swaye Chateau</span>
               </a>
@@ -77,7 +78,7 @@ const Footer = () => {
         <div id="copyright" className="p-2">
           <p className="text-white">
             &copy; 2022 
-            <Link href="/" passHref>
+            <Link href="/" passHref legacyBehavior>
               <a className="font-bold text-white hover:text-green-400">
                 <span> SC Portfolio</span>
               </a>

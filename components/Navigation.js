@@ -24,7 +24,7 @@ const Navigation = ({ yAxis }) => {
         } `}
       >
         <div className="flex items-center justify-evenly text-white">
-          <Link passHref href="/" title="Home">
+          <Link legacyBehavior passHref href="/" title="Home">
             <a className="flex flex-col items-center justify-center text-2xl hover:text-green-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ const Navigation = ({ yAxis }) => {
             </a>
           </Link>
 
-          <Link passHref href="#about" title="About">
+          <Link legacyBehavior passHref href="#about" title="About">
             <a className="flex flex-col items-center justify-center text-2xl hover:text-green-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,6 +60,7 @@ const Navigation = ({ yAxis }) => {
           </Link>
 
           <Link
+            legacyBehavior
             href="https://projects.swayechateau.com"
             passHref
             title="Projects"
@@ -83,6 +84,7 @@ const Navigation = ({ yAxis }) => {
           </Link>
 
           <Link
+            legacyBehavior
             href="https://blog.swayechateau.com"
             title="Blog"
             passHref
@@ -122,12 +124,13 @@ const Navigation = ({ yAxis }) => {
           </h1>
         </div>
         <div className="flex grow items-center justify-center space-x-3">
-          <Link href="/" passHref title="Home">
+          <Link legacyBehavior href="/" passHref title="Home">
             <a className="p-1 text-2xl capitalize text-white transition-all ease-in hover:text-green-400">
               Home
             </a>
           </Link>
           <Link
+            legacyBehavior
             passHref
             href="https://projects.swayechateau.com"
             target="_blank"
@@ -136,12 +139,12 @@ const Navigation = ({ yAxis }) => {
               Projects
             </a>
           </Link>
-          <Link href="#about">
+          <Link legacyBehavior passHref href="#about">
             <a className="p-1 text-2xl capitalize text-white transition-all ease-in hover:text-green-400">
               About
             </a>
           </Link>
-          <Link passHref href="https://blog.swayechateau.com" target="_blank">
+          <Link legacyBehavior passHref href="https://blog.swayechateau.com" target="_blank">
             <a className="p-1 text-2xl capitalize text-white transition-all ease-in hover:text-green-400">
               Blog
             </a>

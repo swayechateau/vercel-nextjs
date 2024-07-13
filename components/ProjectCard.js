@@ -21,17 +21,17 @@ const ProjectCard = ({ project }) => {
       </div>
       {/* Project Action Buttons */}
       <div className="pt-4 pb-2 text-center">
-        <Link href={project.live_url} target="_blank" passHref rel="noopener noreferrer">
+        <Link legacyBehavior href={project.live_url} target="_blank" passHref rel="noopener noreferrer">
           <a className="m-1 inline-block cursor-pointer rounded bg-[rgba(255,255,255,0.1)] py-2 px-4 uppercase backdrop-blur hover:bg-[rgba(255,255,255,0.2)]">
             View Demo
           </a>
         </Link>
-        <Link href={project.git_repo} target="_blank" passHref rel="noopener noreferrer">
+        <Link legacyBehavior href={project.git_repo} target="_blank" passHref rel="noopener noreferrer">
           <a className="m-1 inline-block cursor-pointer rounded bg-[rgba(255,255,255,0.1)] py-2 px-4 uppercase backdrop-blur hover:bg-[rgba(255,255,255,0.2)]">
             View Code
           </a>
         </Link>
-        <Link href={project.case_study} target="_blank" passHref rel="noopener noreferrer">
+        <Link legacyBehavior href={project.case_study} target="_blank" passHref rel="noopener noreferrer">
           <a className="m-1 inline-block cursor-pointer rounded bg-[rgba(255,255,255,0.1)] py-2 px-4 uppercase backdrop-blur hover:bg-[rgba(255,255,255,0.2)]">
             View Case Study
           </a>
